@@ -3,6 +3,10 @@
     Singkatan-singkatan yang digunakan untuk mempercepat
     penulisan HTML 
  -->
+<!-- Elemen di HTML terbagi menjadi 2 jenis berdasarkan posisinya
+ 1. elemen induk (Parent) => membungkus elemen anak
+ 2. elemen anak (Child) => dibungkus elemen induk
+  -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,6 +15,13 @@
     <title>FGH 23</title>
   </head>
   <body>
-    <p>Selamat Datang</p>
+    <div>block 1</div>
+    <div>block 2</div>
+    <div>block 3</div>
+    <div>
+      <label for="search">Pencarian Barang</label><br>
+      <input type="text" id="search" />
+      <button type="button">Lakukan Pencarian</button>
+    </div>
   </body>
 </html>
