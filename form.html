@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <!-- method HTTP 
+        1. GET => meminta data
+            biasa digunakan untuk pencarian
+            ex. searching, sorting, filtering
+        2. POST => mengirimkan data
+            biasa digunakan untuk submit/mengirimkan data
+            ex. login, register, edit profile
+    -->
+    <form action="/form.html" method="get">
+      <input type="text" name="query" />
+      <button>search</button>
+    </form>
+    <form action="https://jsonplaceholder.typicode.com/posts" method="post">
+      <input type="text" name="title" />
+      <input type="text" name="body" />
+      <input type="number" name="userId" />
+      <button>submit</button>
+    </form>
+  </body>
+</html>
