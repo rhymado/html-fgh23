@@ -24,5 +24,59 @@
       <input type="number" name="userId" />
       <button>submit</button>
     </form>
+    <form>
+      <h1>Form Login</h1>
+      <!-- (label+input)*2 -->
+      <label for="login-email-username" hidden>Email/Username</label>
+      <input type="text" id="login-email-username" name="email-username" placeholder="Email/Username" />
+      <br />
+      <label for="login-password" hidden>Password</label>
+      <input type="password" id="login-password" name="password" placeholder="Password" />
+      <br />
+      <button type="submit">LOGIN</button>
+    </form>
+    <form>
+      <h1>Profile</h1>
+      <label for="profile-name">Name</label>
+      <input type="text" id="profile-name" name="fullname" />
+      <br />
+      <label>Gender</label>
+      <br />
+      <input type="radio" id="profile-gender-male" value="male" name="gender" checked />
+      <label for="profile-gender-male">Male</label>
+      <input type="radio" id="profile-gender-female" value="female" name="gender" />
+      <label for="profile-gender-female">Female</label>
+      <br />
+      <label>Hobbies</label>
+      <br />
+      <input type="checkbox" name="reading" id="hobby-reading" /><label for="hobby-reading">Reading</label>
+      <input type="checkbox" name="hiking" id="hobby-hiking" /><label for="hobby-hiking">Hiking</label>
+      <input type="checkbox" name="gaming" id="hobby-gaming" /><label for="hobby-gaming">Gaming</label>
+      <input type="checkbox" name="other" id="hobby-other" /><label for="hobby-other">Other</label>
+      <br />
+      <label for="profile-city">City</label>
+      <select name="city" id="profile-city">
+        <option value="default" hidden>Pilih Domisili Anda</option>
+        <option value="jakarta">Jakarta</option>
+        <option value="bandung">Bandung</option>
+        <option value="bali">Bali</option>
+        <option value="lombok">Lombok</option>
+      </select>
+      <br />
+      <label for="profile-description">Self Description</label>
+      <br />
+      <textarea
+        name="description"
+        id="profile-description"
+        style="max-width: 50%; max-height: 200px"
+        placeholder="My Description"
+      ></textarea>
+      <br />
+      <button type="submit">
+        <img src="./imgs/Unofficial_Windows_logo_variant_-_2002–2012_(Multicolored).svg.png" alt="logo" width="10" />
+        <span>Edit Profile</span>
+      </button>
+      <!-- <input type="submit" value="Edit Profile" /> -->
+    </form>
   </body>
 </html>
