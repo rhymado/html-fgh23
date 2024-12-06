@@ -13,21 +13,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FGH 23</title>
+    <link rel="stylesheet" href="./index.css" />
+    <style>
+      .special {
+        font-style: italic;
+        text-decoration: line-through;
+        color: blue;
+      }
+      div {
+        font-weight: bold;
+        color: red;
+      }
+      #search {
+        font-size: 32px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: brown;
+        padding: 20px 5px;
+        width: 400px;
+        box-sizing: border-box;
+      }
+    </style>
   </head>
   <body>
     <div>block 1</div>
-    <div>block 2</div>
+    <div class="special">block 2</div>
     <div>block 3</div>
     <div>
       <label for="search">Pencarian Barang</label><br />
-      <input type="text" id="search" />
+      <input type="text" id="search" class="special" />
       <button type="button">Lakukan Pencarian</button>
     </div>
     <div>
       <a href="http://google.com">Google</a>
       <!-- <a href="file:///d%3A/html/fgh23/about.html">About</a> -->
       <a href="./about.html">About Relative</a>
-      <a href="./table.html">Table</a>
+      <a href="./table.html" class="special">table</a>
       <a href="./form.html">Form</a>
     </div>
     <div>

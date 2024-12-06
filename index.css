@@ -1,0 +1,27 @@
+.special {
+  font-family: "Courier New", Courier, monospace;
+  color: yellow;
+  transition: font-size 0.5s ease-in 0.2s;
+}
+
+.special:hover {
+  font-size: 32px;
+  font-family: "Times New Roman", Times, serif;
+  transition: font-size 0.5s ease-out 0.2s;
+  /* transition: property durasi jenis delay arah */
+}
+
+.special::first-letter {
+  text-transform: capitalize;
+}
+
+.special::before {
+  content: "?";
+}
+
+/* .special::after {
+  content: url("./imgs/Unofficial_Windows_logo_variant_-_2002–2012_(Multicolored).svg.png");
+  width: 12px;
+  height: 10px;
+  display: inline-block;
+} */

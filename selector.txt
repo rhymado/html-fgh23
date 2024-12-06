@@ -1,0 +1,26 @@
+CSS Selector
+1. simpel
+2. kompleks
+
+Simple
+1. selector element => namaElemen
+ex. div, p, h1, table
+2. selector class => .namaClass
+ex. .header, .hobby, .gender
+3. selector id => #namaId
+ex. #login, #register
+
+specifity levels => id > class > element
+
+style untuk suatu element > style yang diwarisi dari parent element
+specificity lebih diprioritaskan daripada letak
+
+kompleks
+1. pseudo-class => keadaan khusus
+selector:pseudo-class
+ex. .special:hover
+
+2. pseudo-element => bagian dari elemen (sub elemen)
+selector::pseudo-element
+ex. .special::first-letter
+pseudo-element yang sering dipakai => before, after
