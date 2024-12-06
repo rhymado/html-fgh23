@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  height: 2000px;
+  background-color: lightgrey;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid black;
+  /* width: 50%; */
+  /* border-width border-style border-color */
+  position: relative;
+  min-width: 500px;
+  /* overflow-x: scroll; */
+}
+
+.box {
+  width: 10%;
+  height: 100px;
+  background-color: lightblue;
+  padding: 5px;
+  border-radius: 10px;
+  border: 2px solid black;
+  margin: 10px 10px 10px 0px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.relative {
+  position: relative;
+  /* jika posiiton bukan static mendapatkan atribut tambahan */
+  /* top left right bottom */
+  /* top: 100px;
+  left: 250px; */
+}
+
+.absolute {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.mini {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+  margin: 0;
+  background: hsla(197, 54%, 79%, 0.8);
+}
+
+.wide {
+  width: 110%;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.sticky {
+  position: sticky;
+  top: 10px;
+  left: 20px;
+}
