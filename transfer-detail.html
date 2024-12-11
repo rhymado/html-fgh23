@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transfer Detail</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="transfer-detail.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="imgs/wallet-logo.png" alt="logo-wallet" width="32" height="32" />
+        <p>E-Wallet</p>
+      </div>
+      <div>
+        <p>Ghaluh Wizard</p>
+        <img src="imgs/profile.png" alt="profile" width="48" height="48" />
+        <img src="imgs/down-arrow.svg" alt="down-arrow" width="12" height="6" />
+      </div>
+    </header>
+    <aside>
+      <div>
+        <img src="imgs/dashboard-two.svg" alt="dashboard" width="24" height="24" />
+        <p>Dashboard</p>
+      </div>
+      <div>
+        <img src="imgs/Send.svg" alt="transfer" width="24" height="24" />
+        <p>Transfer</p>
+      </div>
+      <div>
+        <img src="imgs/history.svg" alt="history" width="24" height="24" />
+        <p>History</p>
+      </div>
+      <div>
+        <img src="imgs/Upload.svg" alt="top-up" width="24" height="24" />
+        <p>Top Up</p>
+      </div>
+      <div>
+        <img src="imgs/2 User.svg" alt="profile" width="24" height="24" />
+        <p>Profile</p>
+      </div>
+      <div>
+        <img src="imgs/Icon.svg" alt="logout" width="24" height="24" />
+        <p>Keluar</p>
+      </div>
+    </aside>
+    <main>
+      <section class="transfer-step">
+        <div>
+          <img src="imgs/Send-blue.svg" alt="send" />
+          <p>Transfer Money</p>
+        </div>
+        <div>
+          <div class="step">
+            <div class="circle">
+              <p>1</p>
+            </div>
+            <p>Find People</p>
+          </div>
+          <div class="conjunction"></div>
+          <div class="step active">
+            <div class="circle">
+              <p>2</p>
+            </div>
+            <p>Set Nominal</p>
+          </div>
+          <div class="conjunction"></div>
+          <div class="step">
+            <div class="circle">
+              <p>3</p>
+            </div>
+            <p>Finish</p>
+          </div>
+        </div>
+      </section>
+      <section class="transfer-info">
+        <form>
+          <div>
+            <p>People Information</p>
+            <div class="receiver">
+              <img src="imgs/profile-receiver.png" alt="receiver" width="80" height="80" />
+              <div>
+                <p>Ghaluh 1</p>
+                <p>(239)555-0108</p>
+                <div>
+                  <img src="imgs/verified.svg" alt="verified" />
+                  <p>Verified</p>
+                </div>
+              </div>
+              <img src="imgs/star.svg" alt="favorite" />
+            </div>
+          </div>
+          <div>
+            <label for="amount">Amount</label>
+            <p>Type the amount you want to transfer and then press continue to the next steps.</p>
+            <div>
+              <img src="imgs/money.svg" alt="amount" />
+              <input
+                type="text"
+                name="amount"
+                id="amount"
+                placeholder="Enter Nominal Transfer"
+                width="14.67"
+                height="9.33"
+              />
+            </div>
+          </div>
+          <div>
+            <label for="notes">Notes</label>
+            <p>You can add some notes for this transfer such as payment coffee or something</p>
+            <textarea name="notes" id="notes" placeholder="Enter Some Notes"></textarea>
+          </div>
+          <button type="button">Submit & Transfer</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
