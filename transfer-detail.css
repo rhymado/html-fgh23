@@ -56,14 +56,17 @@ header > div:nth-child(2) > img:nth-child(3) {
 
 aside {
   grid-area: aside;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
   padding: 30px;
   border-right: var(--border-style);
 }
 
-aside > div {
+aside ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+aside li {
   display: flex;
   gap: 10px;
   cursor: pointer;
@@ -73,25 +76,30 @@ aside > div {
   padding: 10px;
 }
 
-aside > div:last-child {
+aside ul {
+  list-style: none;
+  padding: 0;
+}
+
+aside li:last-child {
   color: red;
 }
 
-aside > div:not(:last-child) > img {
+aside li:not(:last-child) > img {
   filter: brightness(0) saturate(100%);
 }
 
-aside > div:hover {
+aside li:hover {
   background: var(--primary-color);
   color: white;
 }
 
-aside > div:hover > img {
+aside li:hover > img {
   filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(222deg) brightness(104%)
     contrast(108%);
 }
 
-aside > div:hover:last-child > img {
+aside li:hover:last-child > img {
   filter: brightness(0) saturate(100%) invert(16%) sepia(100%) saturate(7430%) hue-rotate(7deg) brightness(107%)
     contrast(101%);
 }
