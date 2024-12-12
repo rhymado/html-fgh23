@@ -209,6 +209,7 @@ form > div:nth-child(2) > div {
   border: var(--border-style);
   height: 62px;
   display: flex;
+  align-items: center;
   padding: 10px;
   gap: 10px;
 }
