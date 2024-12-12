@@ -8,16 +8,16 @@
 * {
   box-sizing: border-box;
   margin: 0;
-  user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
+  user-select: none;
 }
 
 body {
   font-family: Montserrat, Arial, Helvetica, sans-serif;
   display: grid;
   min-height: 100vh;
-  grid-template-columns: minmax(50px, 1fr) minmax(50px, 4.5fr);
+  grid-template-columns: 262px minmax(500px, 1fr);
   grid-template-rows: 76px 1fr;
   grid-template-areas:
     "header header"
@@ -39,7 +39,7 @@ header > div {
   font-size: 16px;
 }
 
-header > div:nth-child(1) > p {
+header > div:first-child > p {
   color: var(--primary-color);
   font-size: 20px;
   font-weight: 600;
