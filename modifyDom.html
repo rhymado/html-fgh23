@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modifying DOM</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      body {
+        padding: 10px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      form > div {
+        align-self: flex-end;
+        width: 25%;
+        text-align: right;
+        cursor: pointer;
+      }
+      form > div > * {
+        cursor: pointer;
+      }
+      button {
+        cursor: pointer;
+      }
+      .container {
+        min-height: 100px;
+        background: lightblue;
+        position: relative;
+        margin: 10px 0;
+        border: 2px solid black;
+        border-radius: 5px;
+        padding: 10px;
+      }
+      .container > button {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+      }
+      section > div:nth-child(2) {
+        display: flex;
+        gap: 10px;
+      }
+      section textarea {
+        resize: none;
+        flex: 1;
+        padding: 10px;
+      }
+      .text-container {
+        color: red;
+      }
+      .text {
+        color: blue;
+      }
+    </style>
+    <script src="modifyDom.js" defer></script>
+  </head>
+  <body>
+    <form>
+      <label for="email">Email</label>
+      <input type="text" name="email" id="email" />
+      <label for="pwd">Password</label>
+      <input type="password" name="pwd" id="pwd" />
+      <div>
+        <label for="show-pwd">Show Password</label>
+        <input type="checkbox" id="show-pwd" onchange="togglePassword()" />
+      </div>
+      <button type="button">Login</button>
+    </form>
+    <div class="container">
+      <button type="button" onclick="colorRandomizer()">Randomize Bg-Color</button>
+    </div>
+    <section>
+      <div class="container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, dolores?</p>
+      </div>
+      <div>
+        <textarea placeholder="Type new text here" rows="1"></textarea>
+        <button type="button" onclick="modifyText()">Change Text</button>
+      </div>
+    </section>
+    <section class="container">
+      <div>
+        <input type="number" />
+        <button type="button" onclick="addEmptyList()">Add Empty List</button>
+        <button type="button" onclick="resetEmptyList()">Reset</button>
+      </div>
+      <ul>
+        <li>Default</li>
+      </ul>
+      <div class="text-container">
+        <p class="text">Initial Text</p>
+      </div>
+      <div class="btn-collection">
+        <button type="button" onclick="insert('beforebegin')">before begin</button>
+        <button type="button" onclick="insert('afterbegin')">after begin</button>
+        <button type="button" onclick="insert('beforeend')">before end</button>
+        <button type="button" onclick="insert('afterend')">after end</button>
+      </div>
+    </section>
+  </body>
+</html>
