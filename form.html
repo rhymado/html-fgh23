@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
     <script src="form.js" defer></script>
+    <style>
+      button {
+        cursor: pointer;
+      }
+    </style>
   </head>
   <body>
     <!-- method HTTP 
@@ -36,7 +41,7 @@
       <br />
       <button type="submit">LOGIN</button>
     </form>
-    <form>
+    <form onsubmit="handleSubmitForm(event)">
       <h1>Profile</h1>
       <label for="profile-name">Name</label>
       <input type="text" id="profile-name" name="fullname" />
