@@ -44,6 +44,27 @@
         /* display: none; */
         visibility: hidden;
       }
+      .parent,
+      .children,
+      .grandchildren {
+        padding: 10px;
+        border: 2px solid black;
+        cursor: pointer;
+      }
+      .parent {
+        height: 200px;
+        background: lightcoral;
+      }
+      .children {
+        height: 50%;
+        width: 50%;
+        background: lightgreen;
+      }
+      .grandchildren {
+        height: 50%;
+        width: 50%;
+        background: lightsalmon;
+      }
     </style>
   </head>
   <body>
@@ -54,6 +75,11 @@
         <button id="increase">Increase</button>
       </div>
       <p>Error: Angka tidak boleh kurang dari 0</p>
+    </div>
+    <div class="box parent">
+      <div class="box children">
+        <div class="box grandchildren"></div>
+      </div>
     </div>
   </body>
 </html>

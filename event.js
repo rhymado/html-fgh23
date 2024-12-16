@@ -32,3 +32,34 @@ errorMsg.addEventListener("minqtyreached", function () {
   this.style.visibility = "visible";
   btnDec.disabled = true;
 });
+
+function colorRandomizer(element) {
+  console.log(element);
+  function randomizer() {
+    const number = Math.floor(Math.random() * 255);
+    return number;
+  }
+  const newColor = `rgb(${randomizer()}, ${randomizer()}, ${randomizer()})`;
+  //   console.log(newColor);
+  element.style.background = newColor;
+}
+
+function colorRandomizer2(event) {
+  console.log(event.target);
+  function randomizer() {
+    const number = Math.floor(Math.random() * 255);
+    return number;
+  }
+  const newColor = `rgb(${randomizer()}, ${randomizer()}, ${randomizer()})`;
+  //   console.log(newColor);
+  event.target.style.background = newColor;
+}
+
+// document.querySelectorAll(".box").forEach((el) => {
+//   el.addEventListener("click", function (event) {
+//     event.stopPropagation();
+//     colorRandomizer(this);
+//   });
+// });
+
+document.querySelector(".parent").addEventListener("click", colorRandomizer2);
