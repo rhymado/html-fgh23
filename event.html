@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event</title>
+    <script src="event.js" defer></script>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        user-select: none;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        min-height: 100vh;
+        background: lightblue;
+      }
+      button {
+        cursor: pointer;
+      }
+      .qty {
+        padding: 10px;
+        border: 2px solid black;
+      }
+      .qty div {
+        display: flex;
+      }
+      .qty > div > p {
+        background: white;
+        flex: 1;
+        text-align: center;
+        font-size: 2rem;
+        padding: 5px;
+        font-weight: 800;
+      }
+      .qty > p {
+        text-align: center;
+        padding: 5px;
+        font-weight: 600;
+        color: red;
+        /* display: none; */
+        visibility: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="qty">
+      <div>
+        <p>0</p>
+        <button id="decrease">Decrease</button>
+        <button id="increase">Increase</button>
+      </div>
+      <p>Error: Angka tidak boleh kurang dari 0</p>
+    </div>
+  </body>
+</html>
