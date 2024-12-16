@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form</title>
+    <script src="form.js" defer></script>
   </head>
   <body>
     <!-- method HTTP 
@@ -16,13 +17,13 @@
     -->
     <form action="/form.html" method="get">
       <input type="text" name="query" />
-      <button>search</button>
+      <button type="button" onclick="handleQuery()">search</button>
     </form>
     <form action="https://jsonplaceholder.typicode.com/posts" method="post">
-      <input type="text" name="title" />
-      <input type="text" name="body" />
-      <input type="number" name="userId" />
-      <button>submit</button>
+      <input type="text" name="title" id="title" />
+      <input type="text" name="body" id="body" />
+      <input type="number" name="userId" id="userId" />
+      <button type="button" onclick="handlePost()">submit</button>
     </form>
     <form>
       <h1>Form Login</h1>
