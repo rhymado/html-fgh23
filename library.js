@@ -64,7 +64,6 @@ async function createList(event) {
     const url = `${origin}/people/${user}/lists`;
     const request = new Request(url, {
       method: "POST",
-      mode: "no-cors",
       headers: {
         "Content-Type": "application/json",
       },
